@@ -1,0 +1,5 @@
+public String extraEnd(String str) {
+  int x = str.length()-2;
+  int y = str.length();
+  return str.substring(x,y)+str.substring(x,y)+str.substring(x,y);
+}
