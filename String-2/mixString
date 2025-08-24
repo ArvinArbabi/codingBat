@@ -1,0 +1,28 @@
+public String mixString(String a, String b) {
+  String result = "";
+  String longerString = "";
+  int longer = 0;
+  int smaller;
+  
+  if(a.length() > b.length()){
+    longer = a.length();
+    longerString = a;
+    smaller = b.length();
+  }
+  else{
+    longerString = b;
+    longer = b.length();
+    smaller = a.length();
+  }
+  for(int i = 0; i < longer; i++){
+    if(i<smaller){
+      result += a.charAt(i);
+      result += b.charAt(i);
+    }
+    else{
+      result +=longerString.charAt(i);
+    }
+  }
+  return result;
+  
+}
